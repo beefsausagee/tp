@@ -72,7 +72,8 @@ public class EditCommandParser implements Parser<EditCommand> {
     }
 
     /**
-     * Parses {@code Collection<String> tags} into a {@code Set<Tag>} if
+     * Parses the given {@code Collection<String>} of tags and interests into a
+     * {@code Set<Tag>} if
      * {@code tags} is non-empty.
      * If {@code tags} contain only one element which is an empty string, it will be
      * parsed into a

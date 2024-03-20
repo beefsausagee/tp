@@ -145,10 +145,10 @@ public class ParserUtil {
     }
 
     /**
-     * Parses a {@code String tag} into a {@code Tag}.
+     * Parses a {@code String interest} into a {@code Interest}.
      * Leading and trailing whitespaces will be trimmed.
      *
-     * @throws ParseException if the given {@code tag} is invalid.
+     * @throws ParseException if the given {@code interest} is invalid.
      */
     public static Tag parseInterest(String interest) throws ParseException {
         requireNonNull(interest);
@@ -160,7 +160,14 @@ public class ParserUtil {
     }
 
     /**
-     * Parses {@code Collection<String> tags} into a {@code Set<Tag>}.
+     * Parses the given collections of strings into a set of tags.
+     * Both the {@code tags} and {@code interests} collections are processed.
+     *
+     * @param tags      A collection of strings representing tags.
+     * @param interests A collection of strings representing interests.
+     * @return A set of {@code Tag} objects representing the parsed tags and
+     *         interests.
+     * @throws ParseException If there is any error parsing the tags or interests.
      */
     public static Set<Tag> parseTags(Collection<String> tags, Collection<String> interests) throws ParseException {
         requireNonNull(tags);
