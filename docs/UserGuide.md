@@ -33,7 +33,7 @@ Moddie is a **desktop app for managing schedules, interests, and tags of contact
    * `exit` : Exits the app.
 
 1. Refer to the [Features](#features) below for details of each command.
-
+<div style="page-break-after: always;"></div>
 --------------------------------------------------------------------------------------------------------------------
 
 ## Features
@@ -166,6 +166,7 @@ OR
 ```
 The person index provided is invalid.
 ```
+<div style="page-break-after: always;"></div>
 
 Potential Errors:
 * [if applicable] Phone number format is wrong (i.e. not a Singapore number)
@@ -291,6 +292,8 @@ Potential Errors:
 * Time format is wrong!
 * Date format is wrong
 * Contact not found in address book
+
+<div style="page-break-after: always;"></div>
 
 ### Deleting a schedule: `deleteSched`
 
@@ -455,6 +458,8 @@ _Details coming soon ..._
 ## Known issues
 
 1. **When using multiple screens**, if you move the application to a secondary screen, and later switch to using only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created by the application before running the application again.
+
+<div style="page-break-after: always;"></div>
 
 --------------------------------------------------------------------------------------------------------------------
 
