@@ -23,6 +23,7 @@ public class Person {
     private final Name name;
     private final Phone phone;
     private final Email email;
+    private final Remark remark;
 
     // Data fields
     private final Address address;
@@ -42,6 +43,31 @@ public class Person {
         this.phone = phone;
         this.email = email;
         this.address = new Address("");
+        this.remark = null;
+        if (!tags.isEmpty()) {
+            this.tags.addAll(tags);
+            this.allTags.addAll(tags);
+        }
+        if (!interests.isEmpty()) {
+            this.interests.addAll(interests);
+            this.allTags.addAll(interests);
+        }
+        if (!schedules.isEmpty()) {
+            this.schedules.addAll(schedules);
+        }
+    }
+
+    /**
+     * Every field must be present and not null.
+     */
+    public Person(Name name, Phone phone, Email email, Set<Tag> tags, Set<Interest> interests,
+        ArrayList<Schedule> schedules, Remark remark) {
+        requireAllNonNull(name, phone, email, tags);
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+        this.address = new Address("");
+        this.remark = remark;
         if (!tags.isEmpty()) {
             this.tags.addAll(tags);
             this.allTags.addAll(tags);
@@ -65,6 +91,7 @@ public class Person {
         this.phone = phone;
         this.email = email;
         this.address = address;
+        this.remark = null;
         if (!tags.isEmpty()) {
             this.tags.addAll(tags);
             this.allTags.addAll(tags);
@@ -88,6 +115,10 @@ public class Person {
 
     public Email getEmail() {
         return email;
+    }
+
+    public Remark getRemark() {
+        return remark;
     }
 
     public Address getAddress() {
@@ -212,6 +243,7 @@ public class Person {
                 .add("phone", phone)
                 .add("email", email)
                 .add("address", address)
+                .add("remark", remark)
                 .add("tags", tags)
                 .add("schedules", schedules.toString())
                 .toString();
