@@ -226,6 +226,8 @@ Disclaimer:
   3. `edit 3 …`
 * Failure to follow these steps will result in unintended outcomes for index-based commands. (edit, delete, etc.)
 
+<div style="page-break-after: always;"></div>
+
 Examples:
 * `find John` returns `john` and `John Doe`
 * `find alex david` returns `Alex Yeoh`, `David Li`<br>
@@ -463,6 +465,8 @@ classmates within the contact list.
 ![img_5.png](img_5.png)
 By hovering over the Group schedule, you would be able to view all the participants of that specific group schedule.
 ![img_4.png](img_4.png)
+
+<div style="page-break-after: always;"></div>
 
 4) If there is a conflict in schedule between 2 people, the schedule border would be colored red. Both schedules would still
 display each of their own timings.
