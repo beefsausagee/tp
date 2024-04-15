@@ -401,7 +401,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**
 
-1.  User requests to find a person with the enetred keyword in name.
+1.  User requests to find a person with the entered keyword in name.
 2.  AddressBook shows founded persons.
 
     Use case ends.
